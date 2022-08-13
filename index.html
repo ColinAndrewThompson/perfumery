@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Perfumery</title>
+</head>
+<body>
+    <nav class="flex space-between align-center navBar">
+        <h3 class="brand">étrange</h3>
+
+       
+        <input type="button" value="|||" onclick="showNav()" class="showHamBtn" id="btnValue"/>
+        <nav class="classNav">
+            <a href="####">home</a>
+            <a href="###"> cart</a>
+            
+        </nav>
+        
+        <nav class="hamburger" id="showHAM">
+            <ul>
+                <li>shop</li>
+                <li>cart</li>
+                <li>about</li>
+            </ul>
+        </nav>
+    </nav>
+
+    <section class="mainContent">
+        <h1 class="shopNow">shop now</h1>
+        <article class="perfumeAdd">
+            <picture class="largerImg">
+                <source  media="(min-width: 601px)" srcset="./orange1.jpg" width="400">
+                <img src="./orange.jpg" alt="">
+            </picture>
+            
+            <div class="perfumeAddInfo">
+                <h1>PROPRE ORANGE DÉMENTE</h1>
+                <p>the essence of beauty, this captures classic smells of citrus and provides a modern twist.
+                </p>
+                <h1>$199.95</h1>
+                <button>Add to Cart</button>
+            </div>
+        </article>
+
+        <article class="perfumeAdd">
+            
+            <picture>
+                <source class="largerImg" media="(min-width: 601px)" srcset="./blue1.jpg" width="400">
+                <img src="./blue.jpg" alt="">
+            </picture>
+
+            <div class="perfumeAddInfo">
+                <h1>OCÉAN PLEIN DE LARMES</h1>
+                <p>the heart of the ocean, this captues smells of the seaside with a calm breeze, promising to entice.
+                </p>
+                <h1>$189.95</h1>
+                <button>Add to Cart</button>
+            </div>
+        </article>
+        <article class="perfumeAdd">
+            
+            <picture>
+                <source class="largerImg" media="(min-width: 601px)" srcset="./yellow1.jpg" width="400">
+                <img src="./yellow.jpg" alt="">
+            </picture>
+
+            <div class="perfumeAddInfo">
+                <h1>LA VANILLE EN VOGUE</h1>
+                <p>the timeless wonder, this captures pure joy as it fills the room and brings images of summer and a better time to mind.
+                </p>
+                <h1>$219.95</h1>
+                <button>Add to Cart</button>
+            </div>
+        </article>
+    </section>
+
+    <h1 class="brandWatermarkL brandWatermark">étrange</h1>
+    <h1 class="brandWatermarkR brandWatermark">est. '22</h1>
+    
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,309 @@
+:root {
+  --clr-mainDark: #1e3326;
+  --clr-accent: #f3f7f3;
+  --clr-altDark: #414A4E;
+  --clr-altAccent: #EFBF57;
+}
+
+/* resets */
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* larger */
+
+
+
+body {
+  background-color: #fffffa;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.hamburger {
+  display: none;
+}
+.showHamBtn {
+  display: none;
+}
+
+.perfumeAdd {
+  background-color: var(--clr-accent);
+  border-radius: 2rem;
+}
+
+.perfumeAddInfo{
+    padding: 1rem;
+}
+
+.perfumeAddInfo p{
+    color: var(--clr-altDark);
+}
+
+.perfumeAddInfo button{
+    color: var(--clr-accent);
+    background-color: var(--clr-mainDark);
+    border: none;
+    padding:  0.5rem 1rem ;
+    border-radius: 1rem;
+}
+
+.perfumeAdd{
+    width: 600px;
+    margin: 0 auto;
+    /* border: 1px red solid; */
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+  }
+.perfumeAddInfo{
+    width: 130px;
+    
+}
+.perfumeAdd img{
+    height: 100%;
+    border-radius: 2rem 0  0 2rem;
+}
+
+.navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100vw;
+    border-bottom: solid 0.25rem black;
+  }
+  .brand {
+    padding-left: 3rem;
+    font-size: 1.4rem;
+
+  }
+  .mainContent {
+    padding-top: 70px;
+    
+  }
+
+  .brandWatermark{
+    color:#1e3326;
+    opacity: 0.1;
+    letter-spacing: 1rem;
+    font-size: 6rem;
+    
+    position: fixed;
+    padding: 0;
+    margin: 0;
+  }
+
+  .brandWatermarkL{
+    rotate: -90deg;
+    left: -6rem;
+    top: 50%; 
+    
+  }
+  .brandWatermarkR{
+    rotate: 90deg;
+    /* left: 0; */
+    top: 50%;
+    right: -6rem;
+  }
+
+  .shopNow{
+    padding-left: 3.6rem;
+  }
+
+  .classNav{
+    padding-right: 1rem;
+    margin: 1rem;
+    gap: 1.5rem;
+    display: flex;
+    position: fixed;
+    right: 0;
+  }
+  .classNav a{
+    text-decoration: none;
+    color: var(--clr-mainDark);
+    border: 2px solid black;
+    width: 6rem;
+    padding: 0.25rem 0;
+    text-align: center;
+  }
+
+  .hamburger{
+    display: none;
+}
+.hamburger ul{
+    display: hidden;
+}
+.hamburger ul li{
+    display: none;
+}
+
+
+
+
+
+/* mid */
+@media (max-width: 1180px) {
+    .brandWatermark{
+        display: none;
+    } 
+
+    
+}
+
+
+/* tablet + phone */
+@media (max-width: 600px) {
+  body {
+    background-color: #fffffa;
+  }
+
+  h1 {
+    color: var(--clr-mainDark);
+  }
+  .hamburger {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    border-left: 0.25rem solid black;
+    min-width: 25vw;
+    padding-top: 40px;
+    /* display: block; */
+  }
+
+  .navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100vw;
+    border-bottom: solid 0.25rem black;
+  }
+  .classNav {
+    display: none;
+  }
+
+  .mainContent {
+    padding-top: 60px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .brand {
+    padding-left: 1rem;
+  }
+
+  .showHamBtn {
+    display: block;
+    margin-right: 1rem;
+    z-index: 5;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    color: darkgray;
+    /* border-radius: 100%; */
+  }
+
+  .perfumeAdd {
+    width: 300px;
+    margin: 0 auto;
+    /* border: 1px red solid; */
+    margin-bottom: 3rem;
+    display: block;
+  }
+  .perfumeAdd img {
+    width: 100%;
+    height: 200px;
+    max-height: 201px;
+    border-radius: 2rem 2rem 0 0rem;
+  }
+  .perfumeAddInfo{
+    width: 100%;
+}
+.hamburger ul{
+    padding-top: 1rem;
+    display: block;
+}
+.hamburger ul li{
+    padding-bottom: 1rem;
+    display: block;
+}
+.hamburger ul li:hover{
+    color: var(--clr-altAccent);
+    cursor: pointer;
+}
+
+  
+}
