@@ -298,6 +298,9 @@ body {
   .perfumeAddInfo{
     width: 100%;
 }
+.perfumeAddInfo p{
+  padding-right: 1rem;
+}
 .hamburger ul{
     padding-top: 1rem;
     display: block;
